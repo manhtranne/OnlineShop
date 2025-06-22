@@ -20,13 +20,13 @@ namespace OnlineShop.Areas.Admin.Controllers
             _context = context;
         }
 
-        // GET: Admin/Menus
+        // GET: Admin/Menu
         public async Task<IActionResult> Index()
         {
             return View(await _context.Menus.ToListAsync());
         }
 
-        // GET: Admin/Menus/Details/5
+        // GET: Admin/Menu/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -44,18 +44,18 @@ namespace OnlineShop.Areas.Admin.Controllers
             return View(menu);
         }
 
-        // GET: Admin/Menus/Create
+        // GET: Admin/Menu/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Admin/Menus/Create
+        // POST: Admin/Menu/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,MenuTitle,Link,Type")] Models.Menu menu)
+        public async Task<IActionResult> Create([Bind("Id,MenuTitle,Link,Type")] Menu menu)
         {
             if (ModelState.IsValid)
             {
@@ -63,10 +63,11 @@ namespace OnlineShop.Areas.Admin.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
             return View(menu);
         }
 
-        // GET: Admin/Menus/Edit/5
+        // GET: Admin/Menu/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,15 +80,16 @@ namespace OnlineShop.Areas.Admin.Controllers
             {
                 return NotFound();
             }
+
             return View(menu);
         }
 
-        // POST: Admin/Menus/Edit/5
+        // POST: Admin/Menu/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,MenuTitle,Link,Type")] Models.Menu menu)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,MenuTitle,Link,Type")] Menu menu)
         {
             if (id != menu.Id)
             {
@@ -112,12 +114,14 @@ namespace OnlineShop.Areas.Admin.Controllers
                         throw;
                     }
                 }
+
                 return RedirectToAction(nameof(Index));
             }
+
             return View(menu);
         }
 
-        // GET: Admin/Menus/Delete/5
+        // GET: Admin/Menu/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -135,7 +139,7 @@ namespace OnlineShop.Areas.Admin.Controllers
             return View(menu);
         }
 
-        // POST: Admin/Menus/Delete/5
+        // POST: Admin/Menu/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
