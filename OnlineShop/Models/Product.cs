@@ -9,13 +9,13 @@ public partial class Product
 
     public string? Title { get; set; }
 
-    public string? Desciption { get; set; }
+    public string? Description { get; set; }
 
     public string? FullDesc { get; set; }
 
     public decimal? Price { get; set; }
 
-    public decimal? Disscount { get; set; }
+    public decimal? Discount { get; set; }
 
     public string? ImageName { get; set; }
 

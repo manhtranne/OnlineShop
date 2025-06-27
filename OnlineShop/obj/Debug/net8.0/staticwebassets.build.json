@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MV1vJMKEz6+zRDumQY1c1+YwaGY7csCY3lw2KoCusfQ=",
+  "Hash": "+qiXLrK4WI2nvmQ+jk7UCv3Yfch2tKiOzXQlwbYpKug=",
   "Source": "OnlineShop",
   "BasePath": "_content/OnlineShop",
   "Mode": "Default",
@@ -2295,6 +2295,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\banners\\3676718b-bbe8-41d6-b493-f78d57fcae22.jpg"
+    },
+    {
+      "Identity": "D:\\Workspace\\C#\\Prj_Prn222\\OnlineShop\\OnlineShop\\wwwroot\\images\\banners\\3cb32597-9988-4f99-aeb0-bc53fc6077a6.jpg",
+      "SourceId": "OnlineShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Workspace\\C#\\Prj_Prn222\\OnlineShop\\OnlineShop\\wwwroot\\",
+      "BasePath": "_content/OnlineShop",
+      "RelativePath": "images/banners/3cb32597-9988-4f99-aeb0-bc53fc6077a6.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\banners\\3cb32597-9988-4f99-aeb0-bc53fc6077a6.jpg"
     },
     {
       "Identity": "D:\\Workspace\\C#\\Prj_Prn222\\OnlineShop\\OnlineShop\\wwwroot\\images\\banners\\3ed2e547-c02b-4ee3-8612-54a456c22b6e.jpg",

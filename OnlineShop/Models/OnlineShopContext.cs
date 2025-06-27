@@ -53,10 +53,10 @@ public partial class OnlineShopContext : DbContext
 
         modelBuilder.Entity<Product>(entity =>
         {
-            entity.Property(e => e.Desciption)
+            entity.Property(e => e.Description)
                 .HasMaxLength(500)
                 .IsFixedLength();
-            entity.Property(e => e.Disscount).HasColumnType("money");
+            entity.Property(e => e.Discount).HasColumnType("money");
             entity.Property(e => e.FullDesc).HasMaxLength(4000);
             entity.Property(e => e.ImageName).HasMaxLength(50);
             entity.Property(e => e.Price).HasColumnType("money");
